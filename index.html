@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilo Urbano - Tienda de Ropa</title>
+    <!-- Importación de Google Fonts y Font Awesome para Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <!-- Logo corregido -->
+        <img src="Logo.jpg" alt="Logo oficial de Estilo Urbano" class="logo" />
+        <h1>Distrito urbano| Indumentaria</h1>
+      </div>
+
+      <!-- BARRA DE NAVEGACIÓN -->
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Colección</a></li>
+          <li><a href="#multimedia">Lookbook</a></li>
+          <li><a href="#reseñas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#historial">Registros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Sección Inicio -->
+      <section id="inicio" class="hero-section">
+        <h2>Moda y Tendencia</h2>
+        <p>
+          Renová tu guardarropa con las últimas tendencias en ropa urbana y
+          casual.
+        </p>
+      </section>
+
+      <!-- SECCIÓN PRODUCTOS / ROPA (Flexbox - Cards) -->
+      <section id="productos" class="productos-container">
+        <h2>Nuestra Colección Destacada</h2>
+        <div class="productos-grid">
+          <!-- Tarjeta 1 -->
+          <article class="producto-card">
+            <img
+              src="remera.png"
+              alt="Campera Oversize Denim"
+              class="prod-img"
+            />
+            <h3 class="prod-title">Campera Oversize Denim</h3>
+            <p class="prod-desc">
+              Campera de jean clásica con calce holgado y diseño moderno estilo
+              vintage.
+            </p>
+            <span class="prod-price">$45.99</span>
+            <button class="btn-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+            </button>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="producto-card">
+            <img
+              src="campera.png"
+              alt="Remera Básica de Algodón Premium"
+              class="prod-img"
+            />
+            <h3 class="prod-title">Remera Básica Premium</h3>
+            <p class="prod-desc">
+              Confeccionada 100% en algodón peinado. Suave, cómoda y de corte
+              moderno.
+            </p>
+            <span class="prod-price">$18.50</span>
+            <button class="btn-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+            </button>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="producto-card">
+            <img
+              src="pantalon.png"
+              alt="Pantalón Cargo Urbano"
+              class="prod-img"
+            />
+            <h3 class="prod-title">Pantalón Cargo Urbano</h3>
+            <p class="prod-desc">
+              Pantalón cargo con múltiples bolsillos laterales, estilo
+              utilitario y gran confort.
+            </p>
+            <span class="prod-price">$38.00</span>
+            <button class="btn-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN MULTIMEDIA (Desfile / Lookbook) -->
+      <section id="multimedia" class="multimedia-section">
+        <h2>Desfile Lookbook Temporada</h2>
+        <div class="media-container">
+          <video controls width="100%">
+            <source src="video.mp4" type="video/mp4" />
+            <track
+              src="subtitulos.vtt"
+              kind="subtitles"
+              srclang="es"
+              label="Español"
+              default
+            />
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+      </section>
+
+      <!-- SECCIÓN RESEÑAS (CSS Grid) -->
+      <section id="reseñas" class="reseñas">
+        <h2>Opiniones de Nuestros Clientes</h2>
+        <div class="reseñas-grid">
+          <div class="card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="opinion">
+              "La campera de jean superó mis expectativas. La tela es súper
+              resistente y el talle calza perfecto."
+            </p>
+            <h4>— Martina Giménez</h4>
+          </div>
+          <div class="card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-regular fa-star"></i>
+            </div>
+            <p class="opinion">
+              "Los remeras de algodón son lo más cómodo que probé, no encogen al
+              lavar y la calidad se nota."
+            </p>
+            <h4>— Joaquín Ruarte</h4>
+          </div>
+          <div class="card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="opinion">
+              "¡Excelente atención al cliente y envíos rapidísimos!
+              Definitivamente voy a volver a comprar."
+            </p>
+            <h4>— Camila Sosa</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN CONTACTO (Formulario con Formspree) -->
+      <section id="contacto" class="contacto-section">
+        <h2>Consultas sobre Talles y Envíos</h2>
+        <p>
+          ¿Tenés alguna duda sobre tu talle ideal o el estado de tu pedido?
+          Escribinos.
+        </p>
+
+        <form
+          action="https://formspree.io/f/tu-endpoint-de-formspree"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tucorreo@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje / Consulta de talle:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar Consulta</button>
+        </form>
+      </section>
+
+      <!-- TABLA DE DATOS DE CONTACTO -->
+      <section id="historial" class="tabla-section">
+        <h2>Historial de Consultas de Clientes</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+                <th>Mensaje Corto</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="4" class="table-banner">
+                  --- Mensajes pendientes de respuesta ---
+                </td>
+              </tr>
+              <tr>
+                <td>Florencia Díaz</td>
+                <td>florencia@example.com</td>
+                <td>¿Tienen stock del pantalón cargo en talle M?</td>
+                <td><span class="badge pendiente">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>Mateo Rossi</td>
+                <td>mateo@example.com</td>
+                <td>¿Cuáles son los plazos para cambios de talle?</td>
+                <td><span class="badge pendiente">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>Julieta Vega</td>
+                <td>julieta@example.com</td>
+                <td>
+                  Muchas gracias por asesorarme con el talle de la campera.
+                </td>
+                <td><span class="badge respondido">Respondido</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER CON ICONOS DE REDES SOCIALES -->
+    <footer>
+      <p>
+        &copy; 2026 Estilo Urbano Indumentaria - Todos los derechos reservados.
+      </p>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
