@@ -1,4 +1,3 @@
-/* --- ESTILOS GENERALES Y TIPOGRAFÍA EXTERNA (Google Fonts) --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* --- HEADER Y FOOTER (Fondos personalizados) --- */
 header {
   background: linear-gradient(135deg, #2b2b2b, #111111);
   color: #ffffff;
@@ -71,7 +69,6 @@ footer {
   transform: translateY(-3px);
 }
 
-/* --- BARRA DE NAVEGACIÓN (Flexbox) --- */
 .nav-list {
   list-style: none;
   display: flex;
@@ -95,7 +92,6 @@ footer {
   color: #e0a96d;
 }
 
-/* --- SECCIONES GENERALES --- */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -122,7 +118,6 @@ section h2 {
   border: 1px solid #eaeaea;
 }
 
-/* --- SECCIÓN PRODUCTOS (Flexbox) --- */
 .productos-grid {
   display: flex;
   flex-wrap: wrap;
@@ -205,47 +200,6 @@ section h2 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* --- SECCIÓN RESEÑAS (CSS Grid) --- */
-.reseñas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 10px;
-  border: 1px solid #eaeaea;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-}
-
-.stars {
-  color: #f39c12;
-  margin-bottom: 12px;
-}
-
-.opinion {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.card h4 {
-  color: #2b2b2b;
-  font-size: 0.95rem;
-  text-align: right;
-}
-
-/* --- SECCIÓN CONTACTO (Formulario) --- */
 .contacto-section {
   max-width: 600px;
   margin: 0 auto;
@@ -311,7 +265,6 @@ section h2 {
   color: #111;
 }
 
-/* --- TABLA DE DATOS --- */
 .tabla-section {
   max-width: 900px;
   margin: 0 auto;
@@ -368,7 +321,6 @@ section h2 {
   color: #fff;
 }
 
-/* --- MEDIA QUERIES (Diseño responsivo para móviles < 768px) --- */
 @media (max-width: 768px) {
   .nav-list {
     flex-direction: column;
@@ -385,10 +337,6 @@ section h2 {
     max-width: 350px;
   }
 
-  .reseñas-grid {
-    grid-template-columns: 1fr;
-  }
-
   .contacto-section {
     padding: 20px;
     margin: 0 10px;
@@ -398,3 +346,4 @@ section h2 {
     font-size: 1.6rem;
   }
 }
+
