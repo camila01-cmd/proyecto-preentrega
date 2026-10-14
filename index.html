@@ -1,10 +1,9 @@
-<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estilo Urbano - Tienda de Ropa</title>
-    <!-- Importación de Google Fonts y Font Awesome para Iconos -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,11 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- Enlace al archivo CSS externo -->
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- HEADER -->
     <header>
       <div class="header-container">
         <!-- Logo corregido -->
@@ -27,22 +25,18 @@
         <h1>Distrito urbano| Indumentaria</h1>
       </div>
 
-      <!-- BARRA DE NAVEGACIÓN -->
       <nav>
         <ul class="nav-list">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#productos">Colección</a></li>
           <li><a href="#multimedia">Lookbook</a></li>
-          <li><a href="#reseñas">Reseñas</a></li>
           <li><a href="#contacto">Contacto</a></li>
           <li><a href="#historial">Registros</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- MAIN -->
     <main>
-      <!-- Sección Inicio -->
       <section id="inicio" class="hero-section">
         <h2>Moda y Tendencia</h2>
         <p>
@@ -51,7 +45,6 @@
         </p>
       </section>
 
-      <!-- SECCIÓN PRODUCTOS / ROPA (Flexbox - Cards) -->
       <section id="productos" class="productos-container">
         <h2>Nuestra Colección Destacada</h2>
         <div class="productos-grid">
@@ -73,7 +66,6 @@
             </button>
           </article>
 
-          <!-- Tarjeta 2 -->
           <article class="producto-card">
             <img
               src="campera.png"
@@ -91,14 +83,13 @@
             </button>
           </article>
 
-          <!-- Tarjeta 3 -->
           <article class="producto-card">
             <img
               src="pantalon.png"
               alt="Pantalón Cargo Urbano"
               class="prod-img"
             />
-            <h3 class="prod-title">Pantalón Cargo Urbano</h3>
+            <h3 class="prod-title">Pantalón Cargo</h3>
             <p class="prod-desc">
               Pantalón cargo con múltiples bolsillos laterales, estilo
               utilitario y gran confort.
@@ -111,7 +102,6 @@
         </div>
       </section>
 
-      <!-- SECCIÓN MULTIMEDIA (Desfile / Lookbook) -->
       <section id="multimedia" class="multimedia-section">
         <h2>Desfile Lookbook Temporada</h2>
         <div class="media-container">
@@ -124,55 +114,10 @@
               label="Español"
               default
             />
-            Tu navegador no soporta la reproducción de videos.
           </video>
         </div>
       </section>
 
-      <!-- SECCIÓN RESEÑAS (CSS Grid) -->
-      <section id="reseñas" class="reseñas">
-        <h2>Opiniones de Nuestros Clientes</h2>
-        <div class="reseñas-grid">
-          <div class="card">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="opinion">
-              "La campera de jean superó mis expectativas. La tela es súper
-              resistente y el talle calza perfecto."
-            </p>
-            <h4>— Martina Giménez</h4>
-          </div>
-          <div class="card">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-regular fa-star"></i>
-            </div>
-            <p class="opinion">
-              "Los remeras de algodón son lo más cómodo que probé, no encogen al
-              lavar y la calidad se nota."
-            </p>
-            <h4>— Joaquín Ruarte</h4>
-          </div>
-          <div class="card">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="opinion">
-              "¡Excelente atención al cliente y envíos rapidísimos!
-              Definitivamente voy a volver a comprar."
-            </p>
-            <h4>— Camila Sosa</h4>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECCIÓN CONTACTO (Formulario con Formspree) -->
       <section id="contacto" class="contacto-section">
         <h2>Consultas sobre Talles y Envíos</h2>
         <p>
@@ -221,7 +166,6 @@
         </form>
       </section>
 
-      <!-- TABLA DE DATOS DE CONTACTO -->
       <section id="historial" class="tabla-section">
         <h2>Historial de Consultas de Clientes</h2>
         <div class="table-container">
@@ -266,10 +210,10 @@
       </section>
     </main>
 
-    <!-- FOOTER CON ICONOS DE REDES SOCIALES -->
     <footer>
       <p>
-        &copy; 2026 Distrito Urbano Indumentaria - Todos los derechos reservados.
+        &copy; 2026 Distrito Urbano Indumentaria - Todos los derechos
+        reservados.
       </p>
       <div class="social-icons">
         <a href="https://instagram.com" target="_blank" aria-label="Instagram"
